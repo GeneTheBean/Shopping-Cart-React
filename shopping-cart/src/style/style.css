@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: 'Lato', sans-serif;
+  margin: 0 15% 0 15%;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.input,
+.submit {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.input {
+  border: 0.1rem solid lightgray;
+}
+
+.App {
+  text-align: center;
+  background-color: white;
+}
+
+.App-header {
+  background-color: white;
+  padding-top: 3rem;
+  padding-left: 1.6rem;
+  color: white;
+}
+
+.App-title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #3f4551;
+  text-align: left;
+}
+
+.App-intro {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 1.5rem 0 2rem 1.8rem;
+  color: #3f4551;
+}
+
+.item {
+  width: 80%;
+}
+
+.item-image {
+  margin: 1rem 0 1rem 1rem;
+  width: 10rem;
+  float: left;
+}
+
+.table-body {
+  width: 100%;
+  background-color: white;
+}
+
+.table {
+  table-layout: auto;
+  width: 98%;
+  margin-left: 1%;
+}
+
+table {
+  border: 0;
+  border-spacing: 0 0.5rem;
+}
+
+thead tr th {
+  border-bottom: 0.3rem solid #dddddd;
+  border-spacing: 0.5rem 0.5rem;
+}
+
+tr.border_bottom td {
+  border-bottom: 0.2rem solid #f2efef;
+}
+
+.size-col {
+  width: 10%;
+  text-align: left;
+}
+
+.size-col-text {
+}
+
+.quantity-col {
+  width: 20%;
+  text-align: left;
+}
+
+.price-col {
+  width: 10%;
+  text-align: left;
+}
+
+.price-col-text {
+  font-size: 1.5rem;
+}
+
+.table-col {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.table-head {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.3rem;
+  color: #3f4551;
+}
+
+.table-head-left {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  color: #3f4551;
+}
+
+.description {
+  margin-left: 15rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.media-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.description-grey {
+  color: #3f4551;
+}
+
+.menu-image {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 25rem;
+  float: right;
+}
+
+.menu-item {
+  margin-top: 2rem;
+}
+
+.menu-price {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.menu-options:hover {
+  cursor: pointer;
+}
+.menu-description {
+  float: left;
+}
+
+.hr {
+  width: 90%;
+}
+
+.child {
+  display: inline-block;
+  background-color: grey;
+}
+
+.exit-button {
+  float: right;
+  background-color: white;
+  color: #3f4551;
+  border: none;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.menu-options {
+  margin-top: 2rem;
+  float: left;
+}
+
+.menu-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #3f4551;
+}
+
+.quantity-section {
+  margin-top: 2rem;
+}
+
+.quantity-bar {
+  margin: 0.5rem;
+  width: 5rem;
+}
+
+.quantity-bar-small {
+  width: 1.5rem;
+}
+.edit-submit {
+  margin-top: 2rem;
+  background-color: blue;
+  font-size: 2rem;
+  font-weight: 20rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  border: none;
+  width: 16rem;
+  height: 4rem;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.checkout {
+  background-color: white;
+  border-spacing: 0.5rem 5rem;
+  padding-top: 3.5rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.service {
+  width: 28%;
+  float: left;
+}
+
+.service-support {
+  text-align: left;
+  font-size: 1.1rem;
+  padding-left: 2rem;
+  color: #3f4551;
+}
+
+.service-support-header {
+  padding-top: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-support-underline {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.price {
+  width: 62%;
+  float: right;
+  margin-right: 1rem;
+}
+
+.promo-code {
+  width: 96%;
+  height: 5rem;
+}
+
+.promo-code-header {
+  float: left;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.promo-code-bar {
+  float: right;
+}
+
+.promo-button {
+  margin-left: 0.5rem;
+  border: 0.2rem solid grey;
+  background: white;
+}
+
+.price-option {
+  font-size: 1.2rem;
+  color: #3f4551;
+  width: 96%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 2rem;
+}
+
+.price-option-text {
+  font-size: 1.4rem;
+  display: inline;
+  color: black;
+  font-weight: 400;
+  float: left;
+}
+
+.price-option-price {
+  display: inline;
+  float: right;
+  font-size: 2rem;
+}
+
+.price-option-price-small {
+  display: inline;
+  float: right;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.total-price-text {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  display: inline;
+  color: black;
+  font-weight: 700;
+  float: left;
+}
+
+.total-price {
+  display: inline;
+  float: right;
+  font-size: 1.8rem;
+}
+
+.line-break {
+  margin: 1rem 0 1rem 0;
+  border: 0.05rem solid #f2efef;
+  width: 98%;
+}
+
+.line-break-med {
+  margin: 1rem 0 1rem 0;
+  border: 0.3rem solid #f2efef;
+  width: 98%;
+}
+
+.promotion-header {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.promotion-codes {
+  letter-spacing: 0.1rem;
+}
+
+.checkout-buttons {
+  width: 65%;
+  float: right;
+  margin-bottom: 5rem;
+}
+
+.continue-block {
+  margin-top: 2.5rem;
+}
+
+.continue-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.price-submit {
+  background-color: blue;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: white;
+  border: none;
+  width: 16rem;
+  height: 4rem;
+  float: right;
+  margin: 1rem 3rem 1rem 1rem;
+}
